@@ -1,8 +1,8 @@
-import Characters from "./characters.tsx";
+import Characters from "./Characters.tsx";
 
 function App() {
   return (
-      <Characters campaign={"Imported Campaign"} />
+      <Characters campaign={"Enemy Within"} />
   )
 }
 
