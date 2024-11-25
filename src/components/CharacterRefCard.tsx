@@ -1,18 +1,21 @@
-import Card from '@mui/material/Card'
-import CardContent from '@mui/material/CardContent'
-import {Typography} from "@mui/material";
+import {Character} from "../model/character.ts";
+
+import {
+    Card,
+    CardContent,
+    Typography,
+} from "@mui/material";
 
 interface ICharacterRefCardProps {
-    name: string;
-    player: string;
+    character: Character
 }
 
-function CharacterRefCard({ name, player }: ICharacterRefCardProps) {
+function CharacterRefCard({ character }: ICharacterRefCardProps) {
     return (
         <Card>
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                    {name} ({player})
+                    {character.name} ({character.player})
                 </Typography>
             </CardContent>
         </Card>
