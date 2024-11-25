@@ -90,7 +90,7 @@ function Characters({ campaign } : ICharactersProps) {
             <h1>{campaign}</h1>
             <Grid2 container spacing={2}>
                 {CharacterData.map((character) => (
-                    <Grid2 size={{xs: 12, md: 6, lg: 4}}>
+                    <Grid2 size={{xs: 12, lg: 6}}>
                         <CharacterRefCard character={character} />
                     </Grid2>
                 ))}
