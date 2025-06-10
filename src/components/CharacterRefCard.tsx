@@ -4,7 +4,7 @@ import {
     Card,
     CardActionArea,
     CardContent,
-    Grid2,
+    Grid,
     Paper,
     Table, TableCell,
     TableContainer,
@@ -21,13 +21,13 @@ function CharacterRefCard({ character }: ICharacterRefCardProps) {
         <Card>
             <CardActionArea>
                 <CardContent>
-                    <Grid2 container spacing={1}>
-                        <Grid2 size={12}>
+                    <Grid container spacing={1}>
+                        <Grid size={12}>
                             <Typography gutterBottom variant="h5" component="div">
                                 {character.name} ({character.player})
                             </Typography>
-                        </Grid2>
-                        <Grid2 size={3}>
+                        </Grid>
+                        <Grid size={3}>
                             <TableContainer component={Paper}>
                                 <Table>
                                     <TableRow>
@@ -56,8 +56,8 @@ function CharacterRefCard({ character }: ICharacterRefCardProps) {
                                     </TableRow>
                                 </Table>
                             </TableContainer>
-                        </Grid2>
-                        <Grid2 size={6}>
+                        </Grid>
+                        <Grid size={6}>
                             <TableContainer component={Paper}>
                                 <Table>
                                     <TableRow>
@@ -90,11 +90,11 @@ function CharacterRefCard({ character }: ICharacterRefCardProps) {
                                     </TableRow>
                                 </Table>
                             </TableContainer>
-                        </Grid2>
-                        <Grid2 size={3}>
+                        </Grid>
+                        <Grid size={3}>
                             Avatar
-                        </Grid2>
-                    </Grid2>
+                        </Grid>
+                    </Grid>
                 </CardContent>
             </CardActionArea>
         </Card>

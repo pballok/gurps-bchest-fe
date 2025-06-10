@@ -3,7 +3,7 @@ import CharacterRefCard from "./CharacterRefCard.tsx";
 import {Character} from "../model/character.ts";
 
 import {
-    Grid2,
+    Grid,
 } from "@mui/material";
 
 interface ICharactersProps {
@@ -88,13 +88,13 @@ function Characters({ campaign } : ICharactersProps) {
     return (
         <>
             <h1>{campaign}</h1>
-            <Grid2 container spacing={2}>
+            <Grid container spacing={2}>
                 {CharacterData.map((character) => (
-                    <Grid2 size={{xs: 12, lg: 6}}>
+                    <Grid size={{xs: 12, lg: 6}}>
                         <CharacterRefCard character={character} />
-                    </Grid2>
+                    </Grid>
                 ))}
-            </Grid2>
+            </Grid>
         </>
     )
 }
